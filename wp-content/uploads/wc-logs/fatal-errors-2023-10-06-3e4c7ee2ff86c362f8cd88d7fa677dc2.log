@@ -1,0 +1,2 @@
+2023-10-06T03:36:40+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in D:\wordpress\wp-includes\Requests\src\Transport\Curl.php on line 533
+

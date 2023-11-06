@@ -66,7 +66,11 @@ add_action( 'wp_enqueue_scripts', 'twentytwentytwo_styles' );
 // Add block patterns
 require get_template_directory() . '/inc/block-patterns.php';
 
-add_action('admin_bar_menu', 'test_functions',1);
+add_action('admin_bar_menu', 'test_functions',11);
 function test_functions() {
-	echo "test menu";
+	echo "This text is hook to admin_bar_menu hook";
 }
+function wporg_filter_title( $title ) {
+	return 'The ' . $title . ' was filtered';
+}
+add_filter( 'the_title', 'wporg_filter_title' );

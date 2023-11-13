@@ -1,0 +1,76 @@
+2023-11-13T01:37:27+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WordCountAndTimePlugin does not have a method "settings" in D:\wordpress\wp-includes\class-wp-hook.php:310
+Stack trace:
+#0 D:\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(false, Array)
+#1 D:\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#3 {main}
+  thrown in D:\wordpress\wp-includes\class-wp-hook.php on line 310
+
+2023-11-13T01:39:28+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WordCountAndTimePlugin does not have a method "settings" in D:\wordpress\wp-includes\class-wp-hook.php:310
+Stack trace:
+#0 D:\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(false, Array)
+#1 D:\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#3 {main}
+  thrown in D:\wordpress\wp-includes\class-wp-hook.php on line 310
+
+2023-11-13T01:41:29+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WordCountAndTimePlugin does not have a method "settings" in D:\wordpress\wp-includes\class-wp-hook.php:310
+Stack trace:
+#0 D:\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(false, Array)
+#1 D:\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#3 {main}
+  thrown in D:\wordpress\wp-includes\class-wp-hook.php on line 310
+
+2023-11-13T01:45:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 3 passed in D:\wordpress\wp-content\plugins\my_first_plugin\my_first_plugin.php on line 15 and at least 4 expected in D:\wordpress\wp-admin\includes\template.php:1700
+Stack trace:
+#0 D:\wordpress\wp-content\plugins\my_first_plugin\my_first_plugin.php(15): add_settings_field('wcp_location', 'Display Locatio...', Array)
+#1 D:\wordpress\wp-includes\class-wp-hook.php(310): WordCountAndTimePlugin->settings('')
+#2 D:\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(false, Array)
+#3 D:\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 D:\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in D:\wordpress\wp-admin\includes\template.php on line 1700
+
+2023-11-13T02:29:27+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class WordCountAndTimePlugin does not have a method "wordcountHTML" in D:\wordpress\wp-admin\includes\template.php:1824
+Stack trace:
+#0 D:\wordpress\wp-admin\includes\template.php(1778): do_settings_fields('word-count-sett...', 'wcp_first_secti...')
+#1 D:\wordpress\wp-content\plugins\my_first_plugin\my_first_plugin.php(48): do_settings_sections('word-count-sett...')
+#2 D:\wordpress\wp-includes\class-wp-hook.php(310): WordCountAndTimePlugin->ourHTML('')
+#3 D:\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 D:\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 D:\wordpress\wp-admin\admin.php(259): do_action('settings_page_w...')
+#6 D:\wordpress\wp-admin\options-general.php(10): require_once('D:\\wordpress\\wp...')
+#7 {main}
+  thrown in D:\wordpress\wp-admin\includes\template.php on line 1824
+
+2023-11-13T02:38:09+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class WordCountAndTimePlugin does not have a method "wordcountHTML" in D:\wordpress\wp-admin\includes\template.php:1824
+Stack trace:
+#0 D:\wordpress\wp-admin\includes\template.php(1778): do_settings_fields('word-count-sett...', 'wcp_first_secti...')
+#1 D:\wordpress\wp-content\plugins\my_first_plugin\my_first_plugin.php(54): do_settings_sections('word-count-sett...')
+#2 D:\wordpress\wp-includes\class-wp-hook.php(310): WordCountAndTimePlugin->ourHTML('')
+#3 D:\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 D:\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 D:\wordpress\wp-admin\admin.php(259): do_action('settings_page_w...')
+#6 D:\wordpress\wp-admin\options-general.php(10): require_once('D:\\wordpress\\wp...')
+#7 {main}
+  thrown in D:\wordpress\wp-admin\includes\template.php on line 1824
+
+2023-11-13T02:45:54+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WordCountAndTimePlugin does not have a method "sanitizeLocation" in D:\wordpress\wp-includes\class-wp-hook.php:312
+Stack trace:
+#0 D:\wordpress\wp-includes\plugin.php(205): WP_Hook->apply_filters('0', Array)
+#1 D:\wordpress\wp-includes\formatting.php(5109): apply_filters('sanitize_option...', '0', 'wcp_location', '0')
+#2 D:\wordpress\wp-includes\option.php(475): sanitize_option('wcp_location', '0')
+#3 D:\wordpress\wp-admin\options.php(322): update_option('wcp_location', '0')
+#4 {main}
+  thrown in D:\wordpress\wp-includes\class-wp-hook.php on line 312
+
+2023-11-13T02:48:49+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WordCountAndTimePlugin does not have a method "sanitizeLocation" in D:\wordpress\wp-includes\class-wp-hook.php:312
+Stack trace:
+#0 D:\wordpress\wp-includes\plugin.php(205): WP_Hook->apply_filters('0', Array)
+#1 D:\wordpress\wp-includes\formatting.php(5109): apply_filters('sanitize_option...', '0', 'wcp_location', '0')
+#2 D:\wordpress\wp-includes\option.php(475): sanitize_option('wcp_location', '0')
+#3 D:\wordpress\wp-admin\options.php(322): update_option('wcp_location', '0')
+#4 {main}
+  thrown in D:\wordpress\wp-includes\class-wp-hook.php on line 312
+

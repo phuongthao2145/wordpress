@@ -11,6 +11,12 @@ if(!defined('ABSPATH')) exit;// Exit if accessed directly
 class OurWordFilterPlugin{
     function __construct(){
         add_action('admin_menu',array($this,'ourMenu'));
+        if(get_option('plugin_words_to_filter')) add_filter('the_content',array($this,'filterLogic')); 
+    }
+    function filterLogic($content){
+        $badWords = explode(",",get_option('plugin_words_to_filter'));
+        $badWordsTrimmed = array_map('trim',$badWords);
+        return str_ireplace($badWordsTrimmed,'****',$content);
     }
     function ourMenu(){
         $mainPageHook = add_menu_page('Words To Filter','Word Filter','manage_options','ourwordfilter',
